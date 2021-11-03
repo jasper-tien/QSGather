@@ -17,6 +17,8 @@
 		8E1DBA6427328F3700ABBBF9 /* QSGatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA6327328F3700ABBBF9 /* QSGatherTests.m */; };
 		8E1DBA6E27328F3700ABBBF9 /* QSGatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA6D27328F3700ABBBF9 /* QSGatherUITests.m */; };
 		8E1DBA7027328F3700ABBBF9 /* QSGatherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA6F27328F3700ABBBF9 /* QSGatherUITestsLaunchTests.m */; };
+		8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA812732915B00ABBBF9 /* QSTransition.m */; };
+		8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA842732928100ABBBF9 /* QSNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8E1DBA6927328F3700ABBBF9 /* QSGatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSGatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1DBA6D27328F3700ABBBF9 /* QSGatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSGatherUITests.m; sourceTree = "<group>"; };
 		8E1DBA6F27328F3700ABBBF9 /* QSGatherUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSGatherUITestsLaunchTests.m; sourceTree = "<group>"; };
+		8E1DBA802732915B00ABBBF9 /* QSTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSTransition.h; sourceTree = "<group>"; };
+		8E1DBA812732915B00ABBBF9 /* QSTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSTransition.m; sourceTree = "<group>"; };
+		8E1DBA832732928100ABBBF9 /* QSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSNavigationController.h; sourceTree = "<group>"; };
+		8E1DBA842732928100ABBBF9 /* QSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		8E1DBA7D27328F6F00ABBBF9 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DBA7F2732914D00ABBBF9 /* navigation */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -158,6 +165,17 @@
 			children = (
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		8E1DBA7F2732914D00ABBBF9 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DBA802732915B00ABBBF9 /* QSTransition.h */,
+				8E1DBA812732915B00ABBBF9 /* QSTransition.m */,
+				8E1DBA832732928100ABBBF9 /* QSNavigationController.h */,
+				8E1DBA842732928100ABBBF9 /* QSNavigationController.m */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +311,9 @@
 				8E1DBA4F27328F3500ABBBF9 /* ViewController.m in Sources */,
 				8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */,
 				8E1DBA5A27328F3700ABBBF9 /* main.m in Sources */,
+				8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */,
 				8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */,
+				8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
