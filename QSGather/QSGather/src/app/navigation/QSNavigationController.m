@@ -116,7 +116,7 @@
             return NO;
         }
         CGPoint velocity = [self.pan velocityInView:self.pan.view];
-        if (velocity.x > 50.f && ABS(velocity.y) / velocity.x < .8f) {
+        if (velocity.x > 5.f && ABS(velocity.y) / velocity.x < .8f) {
             return YES;
         }
     }
