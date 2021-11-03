@@ -6,6 +6,8 @@
 //
 
 #import "SceneDelegate.h"
+#import "QSHomeViewController.h"
+#import "QSNavigationController.h"
 
 @interface SceneDelegate ()
 
@@ -18,6 +20,16 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    if (@available(ios 13, *)) {
+        if (scene) {
+            QSHomeViewController *homeVC = [[QSHomeViewController alloc] init];
+            self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+            self.window.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+            QSNavigationController *navi = [[QSNavigationController alloc] initWithRootViewController:homeVC];
+            self.window.rootViewController = navi;
+            [self.window makeKeyAndVisible];
+        }
+    }
 }
 
 

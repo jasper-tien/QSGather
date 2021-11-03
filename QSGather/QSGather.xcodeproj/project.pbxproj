@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA4827328F3500ABBBF9 /* AppDelegate.m */; };
 		8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA4B27328F3500ABBBF9 /* SceneDelegate.m */; };
-		8E1DBA4F27328F3500ABBBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA4E27328F3500ABBBF9 /* ViewController.m */; };
-		8E1DBA5227328F3500ABBBF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DBA5027328F3500ABBBF9 /* Main.storyboard */; };
 		8E1DBA5427328F3700ABBBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DBA5327328F3700ABBBF9 /* Assets.xcassets */; };
 		8E1DBA5727328F3700ABBBF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DBA5527328F3700ABBBF9 /* LaunchScreen.storyboard */; };
 		8E1DBA5A27328F3700ABBBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA5927328F3700ABBBF9 /* main.m */; };
@@ -19,6 +17,7 @@
 		8E1DBA7027328F3700ABBBF9 /* QSGatherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA6F27328F3700ABBBF9 /* QSGatherUITestsLaunchTests.m */; };
 		8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA812732915B00ABBBF9 /* QSTransition.m */; };
 		8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA842732928100ABBBF9 /* QSNavigationController.m */; };
+		8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +43,6 @@
 		8E1DBA4827328F3500ABBBF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E1DBA4A27328F3500ABBBF9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		8E1DBA4B27328F3500ABBBF9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		8E1DBA4D27328F3500ABBBF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8E1DBA4E27328F3500ABBBF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8E1DBA5127328F3500ABBBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E1DBA5327328F3700ABBBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1DBA5627328F3700ABBBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1DBA5827328F3700ABBBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +56,8 @@
 		8E1DBA812732915B00ABBBF9 /* QSTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSTransition.m; sourceTree = "<group>"; };
 		8E1DBA832732928100ABBBF9 /* QSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSNavigationController.h; sourceTree = "<group>"; };
 		8E1DBA842732928100ABBBF9 /* QSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSNavigationController.m; sourceTree = "<group>"; };
+		8E1DBA88273296F600ABBBF9 /* QSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHomeViewController.h; sourceTree = "<group>"; };
+		8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +141,6 @@
 				8E1DBA4827328F3500ABBBF9 /* AppDelegate.m */,
 				8E1DBA4A27328F3500ABBBF9 /* SceneDelegate.h */,
 				8E1DBA4B27328F3500ABBBF9 /* SceneDelegate.m */,
-				8E1DBA4D27328F3500ABBBF9 /* ViewController.h */,
-				8E1DBA4E27328F3500ABBBF9 /* ViewController.m */,
-				8E1DBA5027328F3500ABBBF9 /* Main.storyboard */,
 				8E1DBA7D27328F6F00ABBBF9 /* app */,
 				8E1DBA7E27328F6F00ABBBF9 /* common */,
 			);
@@ -155,6 +150,7 @@
 		8E1DBA7D27328F6F00ABBBF9 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DBA86273296D700ABBBF9 /* pages */,
 				8E1DBA7F2732914D00ABBBF9 /* navigation */,
 			);
 			path = app;
@@ -176,6 +172,23 @@
 				8E1DBA842732928100ABBBF9 /* QSNavigationController.m */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		8E1DBA86273296D700ABBBF9 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DBA87273296E200ABBBF9 /* home */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		8E1DBA87273296E200ABBBF9 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DBA88273296F600ABBBF9 /* QSHomeViewController.h */,
+				8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +296,6 @@
 			files = (
 				8E1DBA5727328F3700ABBBF9 /* LaunchScreen.storyboard in Resources */,
 				8E1DBA5427328F3700ABBBF9 /* Assets.xcassets in Resources */,
-				8E1DBA5227328F3500ABBBF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1DBA4F27328F3500ABBBF9 /* ViewController.m in Sources */,
 				8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */,
 				8E1DBA5A27328F3700ABBBF9 /* main.m in Sources */,
 				8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */,
+				8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */,
 				8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */,
 				8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */,
 			);
@@ -350,14 +362,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E1DBA5027328F3500ABBBF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E1DBA5127328F3500ABBBF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E1DBA5527328F3700ABBBF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -492,7 +496,6 @@
 				INFOPLIST_FILE = QSGather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,7 +521,6 @@
 				INFOPLIST_FILE = QSGather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

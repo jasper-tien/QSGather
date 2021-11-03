@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.delegate = self;
-    self.navigationBarHidden = YES;
     self.view.exclusiveTouch = YES;
     self.transition = [[QSTransition alloc] init];
     self.transition.delegate = self;
@@ -33,6 +32,8 @@
     self.pan = pan;
     [self.view addGestureRecognizer:pan];
 }
+
+#pragma mark - UIPanGestureRecognizer
 
 - (void)_panNavigationController:(UIPanGestureRecognizer *)pan {
     CGFloat transitionX = [pan translationInView:nil].x;
