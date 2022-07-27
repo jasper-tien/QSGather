@@ -18,6 +18,11 @@
 		8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA812732915B00ABBBF9 /* QSTransition.m */; };
 		8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA842732928100ABBBF9 /* QSNavigationController.m */; };
 		8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */; };
+		8E7008602890E65D009AB81A /* BBPgcTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70085F2890E65D009AB81A /* BBPgcTabController.m */; };
+		8E7008632890E671009AB81A /* BBPgcTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7008612890E671009AB81A /* BBPgcTabBarItem.m */; };
+		8E7008642890E671009AB81A /* BBPgcTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7008622890E671009AB81A /* BBPgcTabBarView.m */; };
+		8E70086E2890E79E009AB81A /* UIView+QSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70086D2890E79E009AB81A /* UIView+QSFrame.m */; };
+		8E70087228911A20009AB81A /* BBPgcTabTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70087128911A20009AB81A /* BBPgcTabTestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,17 @@
 		8E1DBA842732928100ABBBF9 /* QSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSNavigationController.m; sourceTree = "<group>"; };
 		8E1DBA88273296F600ABBBF9 /* QSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHomeViewController.h; sourceTree = "<group>"; };
 		8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHomeViewController.m; sourceTree = "<group>"; };
+		8E70085E2890E65D009AB81A /* BBPgcTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPgcTabController.h; sourceTree = "<group>"; };
+		8E70085F2890E65D009AB81A /* BBPgcTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabController.m; sourceTree = "<group>"; };
+		8E7008612890E671009AB81A /* BBPgcTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabBarItem.m; sourceTree = "<group>"; };
+		8E7008622890E671009AB81A /* BBPgcTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabBarView.m; sourceTree = "<group>"; };
+		8E7008652890E695009AB81A /* BBPgcTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarItem.h; sourceTree = "<group>"; };
+		8E7008662890E696009AB81A /* BBPgcTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarView.h; sourceTree = "<group>"; };
+		8E7008672890E696009AB81A /* BBPgcTabBarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarProtocol.h; sourceTree = "<group>"; };
+		8E70086C2890E79E009AB81A /* UIView+QSFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QSFrame.h"; sourceTree = "<group>"; };
+		8E70086D2890E79E009AB81A /* UIView+QSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QSFrame.m"; sourceTree = "<group>"; };
+		8E70087028911A20009AB81A /* BBPgcTabTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabTestController.h; sourceTree = "<group>"; };
+		8E70087128911A20009AB81A /* BBPgcTabTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabTestController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +168,7 @@
 			children = (
 				8E1DBA86273296D700ABBBF9 /* pages */,
 				8E1DBA7F2732914D00ABBBF9 /* navigation */,
+				8E70085D2890E63D009AB81A /* tab */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -159,6 +176,7 @@
 		8E1DBA7E27328F6F00ABBBF9 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				8E70086F2890E7D5009AB81A /* utils */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -189,6 +207,31 @@
 				8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		8E70085D2890E63D009AB81A /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				8E7008672890E696009AB81A /* BBPgcTabBarProtocol.h */,
+				8E7008652890E695009AB81A /* BBPgcTabBarItem.h */,
+				8E7008612890E671009AB81A /* BBPgcTabBarItem.m */,
+				8E7008662890E696009AB81A /* BBPgcTabBarView.h */,
+				8E7008622890E671009AB81A /* BBPgcTabBarView.m */,
+				8E70085E2890E65D009AB81A /* BBPgcTabController.h */,
+				8E70085F2890E65D009AB81A /* BBPgcTabController.m */,
+				8E70087028911A20009AB81A /* BBPgcTabTestController.h */,
+				8E70087128911A20009AB81A /* BBPgcTabTestController.m */,
+			);
+			path = tab;
+			sourceTree = "<group>";
+		};
+		8E70086F2890E7D5009AB81A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E70086C2890E79E009AB81A /* UIView+QSFrame.h */,
+				8E70086D2890E79E009AB81A /* UIView+QSFrame.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +366,12 @@
 				8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */,
 				8E1DBA5A27328F3700ABBBF9 /* main.m in Sources */,
 				8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */,
+				8E7008602890E65D009AB81A /* BBPgcTabController.m in Sources */,
+				8E70086E2890E79E009AB81A /* UIView+QSFrame.m in Sources */,
 				8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */,
+				8E7008632890E671009AB81A /* BBPgcTabBarItem.m in Sources */,
+				8E70087228911A20009AB81A /* BBPgcTabTestController.m in Sources */,
+				8E7008642890E671009AB81A /* BBPgcTabBarView.m in Sources */,
 				8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */,
 				8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */,
 			);

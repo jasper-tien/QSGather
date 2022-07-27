@@ -6,6 +6,7 @@
 //
 
 #import "QSHomeViewController.h"
+#import "BBPgcTabTestController.h"
 
 @interface QSHomeViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -42,10 +43,15 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)jumpToTabTestController {
+    BBPgcTabTestController *vc = [[BBPgcTabTestController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,10 +67,21 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor orangeColor];
-    vc.title = @"自定义转场动画测试";
-    [self.navigationController pushViewController:vc animated:YES];
+    switch (indexPath.row) {
+        case 0: {
+            UIViewController *vc = [[UIViewController alloc] init];
+            vc.view.backgroundColor = [UIColor orangeColor];
+            vc.title = @"自定义转场动画测试";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 1: {
+            [self jumpToTabTestController];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 @end
