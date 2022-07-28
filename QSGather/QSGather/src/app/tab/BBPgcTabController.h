@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, BBPgcTabSelectType) {
     BBPgcTabSelectTypeDefault = 0,
-    BBPgcTabSelectTypeTap = 1,
-    BBPgcTabSelectTypeScroll = 2,
-    BBPgcTabSelectTypeForce = 3,
+    BBPgcTabSelectTypeTap = 1, // 点击tabBar选中
+    BBPgcTabSelectTypeScroll = 2, // 滑动选中
+    BBPgcTabSelectTypeForce = 3, // 手动选中
 };
 
 @class BBPgcTabController;
@@ -68,10 +68,14 @@ typedef NS_ENUM(NSInteger, BBPgcTabSelectType) {
 @property (nonatomic, strong, readonly) UIScrollView *pageView;
 
 - (instancetype)initWithForceLoad:(BOOL)forceLoad;
-- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *)customTabBarView;
+- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *_Nullable)customTabBarView;
+- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *_Nullable)customTabBarView forceLoad:(BOOL)forceLoad;
 
 - (void)reloadData;
+
 - (void)scrollTo:(NSUInteger)index animated:(BOOL)animated;
+
+- (UIViewController *_Nullable)contentViewController:(NSUInteger)index;
 
 @end
 

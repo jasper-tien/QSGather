@@ -87,7 +87,7 @@
     }
     self.tabModels = tabModels;
     
-    _tabController = [[BBPgcTabController alloc] init];
+    _tabController = [[BBPgcTabController alloc] initWithForceLoad:YES];
     _tabController.dataSource = self;
     _tabController.delegate = self;
     [self.view addSubview:_tabController.view];
@@ -101,8 +101,9 @@
     [super viewWillLayoutSubviews];
     self.tabController.view.frame = (CGRect){
         .origin.y = 100.f,
-        .size.width = self.view.frame.size.width,
-        .size.height = self.view.frame.size.height - 100.f,
+        .origin.x = 50.f,
+        .size.width = self.view.frame.size.width - 100.f,
+        .size.height = self.view.frame.size.height - 200.f,
     };
 }
 

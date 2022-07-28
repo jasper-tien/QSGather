@@ -37,40 +37,66 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
 @property (nonatomic, assign) NSUInteger selectIndex;
 @property (nonatomic, assign) BOOL forceLoad;
 @property (nonatomic, assign) BOOL transition;
+@property (nonatomic, assign) PGCVCStatus tabVCStatus;
 
 @end
 
 @implementation BBPgcTabController
 
-#pragma mark - override methods
+#pragma mark - init
+
+- (instancetype)init {
+    return [self initWithCustomTabBarView:nil forceLoad:NO];
+}
 
 - (instancetype)initWithForceLoad:(BOOL)forceLoad {
+    return [self initWithCustomTabBarView:nil forceLoad:forceLoad];
+}
+
+- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *_Nullable)customTabBarView {
+    return [self initWithCustomTabBarView:customTabBarView forceLoad:NO];
+}
+
+- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *_Nullable)customTabBarView forceLoad:(BOOL)forceLoad {
     if (self = [super init]) {
+        _customTabBarView = customTabBarView;
         _forceLoad = forceLoad;
     }
     return self;
 }
 
-- (instancetype)initWithCustomTabBarView:(UIView<BBPgcTabBarProtocol> *)customTabBarView {
-    if (self = [super init]) {
-        _customTabBarView = customTabBarView;
-        _forceLoad = NO;
-    }
-    return self;
-}
-
-- (instancetype)init {
-    if (self = [super init]) {
-        _forceLoad = NO;
-    }
-    return self;
-}
+#pragma mark - override methods
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupSubviews];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabVCStatus = PGCVCStatusViewWillAppear;
+    [self _updateStatus:PGCVCStatusViewWillAppear controller:self.selectViewController animated:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.tabVCStatus = PGCVCStatusViewDidAppear;
+    [self _updateStatus:PGCVCStatusViewDidAppear controller:self.selectViewController animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.tabVCStatus = PGCVCStatusViewWillDisappear;
+    [self _updateStatus:PGCVCStatusViewWillDisappear controller:self.selectViewController animated:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    self.tabVCStatus = PGCVCStatusViewDidDisappear;
+    [self _updateStatus:PGCVCStatusViewDidDisappear controller:self.selectViewController animated:animated];
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
@@ -113,9 +139,13 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
 }
 
 - (void)scrollTo:(NSUInteger)index animated:(BOOL)animated {
-    if (index == self.selectIndex) return;
+    if (index == self.selectIndex || index >= self.numbersOfViewController) return;
     [self _selectToIndex:index animated:animated selectType:BBPgcTabSelectTypeForce];
     [self.tabBarView updateWithIndex:index animated:animated];
+}
+
+- (UIViewController *_Nullable)contentViewController:(NSUInteger)index {
+    return self.loadedViewControllers[@(index).stringValue];
 }
 
 #pragma mark - private methods
@@ -199,8 +229,13 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
     UIViewController *lastSelectVC = self.selectViewController;
     UIViewController *selectVC = [self _loadControllerWithIndex:index];
     
-    [self _updateStatus:PGCVCStatusViewWillDisappear controller:lastSelectVC animated:NO];
-    [self _updateStatus:PGCVCStatusViewWillAppear controller:selectVC animated:NO];
+    if (self.tabVCStatus < PGCVCStatusViewWillDisappear) {
+        [self _updateStatus:PGCVCStatusViewWillDisappear controller:lastSelectVC animated:NO];
+        if (self.tabVCStatus >= PGCVCStatusViewWillAppear) {
+            [self _updateStatus:PGCVCStatusViewWillAppear controller:selectVC animated:NO];
+        }
+    }
+    
     NSUInteger oldSelectIndex = self.selectIndex;
     self.selectIndex = index;
     self.selectViewController = selectVC;
@@ -218,15 +253,16 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
         }
     }
     
-    BOOL ignore = NO;
     __weak typeof(self) weakSelf = self;
     dispatch_block_t completionBlock = ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (strongSelf == nil) return;
         strongSelf.transition = NO;
-        if (!ignore) {
+        if (self.tabVCStatus < PGCVCStatusViewDidDisappear) {
             [strongSelf _updateStatus:PGCVCStatusViewDidDisappear controller:lastSelectVC animated:NO];
-            [strongSelf _updateStatus:PGCVCStatusViewDidAppear controller:selectVC animated:NO];
+            if (self.tabVCStatus >= PGCVCStatusViewDidAppear) {
+                [strongSelf _updateStatus:PGCVCStatusViewDidAppear controller:selectVC animated:NO];
+            }
         }
         if (strongSelf.delegate != nil) {
             if ([strongSelf.delegate respondsToSelector:@selector(pgcTabController:didDeselectTabAtIndex:type:)]) {
@@ -268,7 +304,6 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
 - (void)_insertController:(UIViewController *)controller toIndex:(NSUInteger)index {
     if (controller && index >= 0 && index < self.numbersOfViewController) {
         self.loadedViewControllers[@(index).stringValue] = controller;
-        [self addChildViewController:controller];
         controller.view.frame = CGRectMake(self.pageView.viewWidth * index, 0, self.pageView.viewWidth, self.pageView.viewHeight);
         controller.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.pageView addSubview:controller.view];
