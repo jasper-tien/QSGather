@@ -140,7 +140,11 @@
 }
 
 - (UIEdgeInsets)tabBarViewInsetInPgcTabController:(BBPgcTabController *)tabController {
-    return UIEdgeInsetsMake(0, 0, 0, 100);
+    return UIEdgeInsetsMake(2, 0, 10, 0);
+}
+
+- (UIEdgeInsets)tabBarViewContentInsetInPgcTabController:(BBPgcTabController *)tabController {
+    return UIEdgeInsetsMake(0, 12, 0, 12);
 }
 
 @end

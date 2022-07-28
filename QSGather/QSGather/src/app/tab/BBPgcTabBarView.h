@@ -14,9 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BBPgcTabBarView : UIView<BBPgcTabBarProtocol>
 
 @property (nonatomic, assign) CGFloat horizontalMargin;
-@property (nonatomic, assign) CGFloat selectIndicatorHeight;
-@property (nonatomic, assign) CGFloat itemSpacing;
-@property (nonatomic, assign) BOOL indicatorAnimated;
 @property (nonatomic, strong, readonly) UIView *selectIndicatorView;
 @property (nonatomic, assign, readonly) NSUInteger selectedIndex;
 @property (nonatomic, assign, readonly) NSUInteger itemCount;

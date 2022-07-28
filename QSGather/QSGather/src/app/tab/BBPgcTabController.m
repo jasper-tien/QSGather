@@ -141,7 +141,7 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
 - (void)scrollTo:(NSUInteger)index animated:(BOOL)animated {
     if (index == self.selectIndex || index >= self.numbersOfViewController) return;
     [self _selectToIndex:index animated:animated selectType:BBPgcTabSelectTypeForce];
-    [self.tabBarView updateWithIndex:index animated:animated];
+    [self.tabBarView selectToIndex:index animated:animated];
 }
 
 - (UIViewController *_Nullable)contentViewController:(NSUInteger)index {
@@ -155,7 +155,7 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
         _tabBarView = _customTabBarView;
     } else {
         _tabBarView = [[BBPgcTabBarView alloc] init];
-//        _tabBarView.indicatorAnimated = YES;
+        _tabBarView.selectIndicatorView.backgroundColor = [UIColor systemPinkColor];
         [_tabBarView configDelegate:self];
     }
     [self.view addSubview:_tabBarView];
@@ -185,13 +185,27 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
     self.numbersOfViewController = [self.dataSource numberInPgcTabController:self];
     self.pageView.contentSize = CGSizeMake(self.view.viewWidth * self.numbersOfViewController, 0);
     
-    [self.tabBarView reloadData];
-    
     NSUInteger selectIndex = [self _defatultSelectIndex];
     selectIndex = MAX(0, selectIndex);
     selectIndex = MIN(self.numbersOfViewController - 1, selectIndex);
     
-    [self.tabBarView updateWithIndex:selectIndex animated:NO];
+    if (self.delegate != nil) {
+        if ([self.delegate respondsToSelector:@selector(tabBarItemSpacingInPgcTabController:)] && [self.tabBarView respondsToSelector:@selector(setItemSpacing:)]) {
+            [self.tabBarView setItemSpacing:[self.delegate tabBarItemSpacingInPgcTabController:self]];
+        }
+        if ([self.delegate respondsToSelector:@selector(indicatorHeightInPgcTabController:)] && [self.tabBarView respondsToSelector:@selector(setIndicatorHeight:)]) {
+            [self.tabBarView setIndicatorHeight:[self.delegate indicatorHeightInPgcTabController:self]];
+        }
+        if ([self.delegate respondsToSelector:@selector(indicatorHiddenInPgcTabController:)] && [self.tabBarView respondsToSelector:@selector(setIndicatorHidden:)]) {
+            [self.tabBarView setIndicatorHidden:[self.delegate indicatorHiddenInPgcTabController:self]];
+        }
+        if ([self.delegate respondsToSelector:@selector(tabBarViewContentInsetInPgcTabController:)] && [self.tabBarView respondsToSelector:@selector(contentScrollView)]) {
+            self.tabBarView.contentScrollView.contentInset = [self.delegate tabBarViewContentInsetInPgcTabController:self];
+        }
+    }
+    
+    [self.tabBarView reloadData];
+    [self.tabBarView selectToIndex:selectIndex animated:NO];
     
     UIViewController *selectVC = [self.dataSource pgcTabController:self contentControllerAtIndex:selectIndex];
     BOOL ignore = (selectVC == self.selectViewController) && (!isForce);
@@ -399,7 +413,7 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if (!CGRectGetWidth(scrollView.bounds)) return;
     NSUInteger selectedIndex = (NSUInteger)(scrollView.contentOffset.x / CGRectGetWidth(scrollView.bounds));
-    [self.tabBarView updateWithIndex:selectedIndex animated:YES];
+    [self.tabBarView selectToIndex:selectedIndex animated:NO];
     [self _selectToIndex:selectedIndex animated:NO selectType:BBPgcTabSelectTypeScroll];
 }
 

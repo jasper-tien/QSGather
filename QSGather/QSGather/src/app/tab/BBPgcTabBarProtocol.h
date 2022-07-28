@@ -44,11 +44,19 @@ typedef void(^PgcTabBarItemActionBlock)(NSUInteger index, NSUInteger tapsRequire
 
 @protocol BBPgcTabBarProtocol <NSObject>
 
+@required
+
+@property (nonatomic, assign) BOOL indicatorHidden;
+@property (nonatomic, assign) BOOL indicatorAnimated;
+@property (nonatomic, assign) CGFloat indicatorHeight;
+@property (nonatomic, assign) CGFloat itemSpacing;
+@property (nonatomic, strong, readonly) UIView *selectIndicatorView;
+@property (nonatomic, assign, readonly) UIScrollView *contentScrollView;
+
 - (void)reloadData;
+- (void)selectToIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)configDelegate:(id<BBPgcTabBarDelegate>)delegate;
-- (void)updateWithIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)updateWithProgress:(CGFloat)progress relativeProgress:(CGFloat)relativeProgress leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex;
-- (NSArray<UIView *> *)tabBarItems;
 
 @end
 

@@ -26,11 +26,16 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
 @end
 
 @implementation BBPgcTabBarView
+@synthesize indicatorHidden = _indicatorHidden;
+@synthesize indicatorAnimated = _indicatorAnimated;
+@synthesize indicatorHeight = _indicatorHeight;
+@synthesize itemSpacing = _itemSpacing;
 
 #pragma mark - Init
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        self.indicatorAnimated = YES;
         [self setupSubviews];
     }
     return self;
@@ -45,14 +50,6 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
 
 #pragma mark - Public
 
-- (void)reloadData {
-    NSArray<UIView<BBPgcTabBarItemProtocol> *> *itemViews = [self _createAndConfigItemViews];
-    _itemCount = itemViews ? itemViews.count : 0;
-    [self _replaceItemViews:itemViews];
-    [self _updateItemsLayout];
-    [self _updateSelectIndicatorLayout];
-}
-
 - (UIView *)selectIndicatorView {
     return _selectIndicator;
 }
@@ -66,8 +63,15 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
 }
 
 #pragma mark - BBPgcTabBarProtocol
+- (void)reloadData {
+    NSArray<UIView<BBPgcTabBarItemProtocol> *> *itemViews = [self _createAndConfigItemViews];
+    _itemCount = itemViews ? itemViews.count : 0;
+    [self _replaceItemViews:itemViews];
+    [self _updateItemsLayout];
+    [self _updateSelectIndicatorLayout];
+}
 
-- (void)updateWithIndex:(NSUInteger)index animated:(BOOL)animated {
+- (void)selectToIndex:(NSUInteger)index animated:(BOOL)animated {
     [self _switchItemWithIndex:index animated:animated completion:nil];
 }
 
@@ -103,8 +107,8 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
     _delegate = delegate;
 }
 
-- (NSArray<UIView *> *)tabBarItems {
-    return _itemViews.copy;
+- (UIScrollView *)contentScrollView {
+    return _scrollView;
 }
 
 #pragma mark - Private
@@ -192,7 +196,7 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
         if ([itemView respondsToSelector:@selector(itemWidth)]) {
             width = itemView.itemWidth;
         }
-        itemView.frame = CGRectMake(itemPointX, 0, width, CGRectGetHeight(self.frame) - _selectIndicatorHeight);
+        itemView.frame = CGRectMake(itemPointX, 0, width, CGRectGetHeight(self.frame) - self.indicatorHeight);
         [_scrollView addSubview:itemView];
         contentSizeWidth = itemPointX + width;
         itemPointX = itemPointX + width + _itemSpacing;
@@ -216,9 +220,9 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
         }
         _selectIndicator.frame = (CGRect) {
             .origin.x = pointX,
-            .origin.y = CGRectGetHeight(self.frame) - _selectIndicatorHeight,
+            .origin.y = CGRectGetHeight(self.frame) - self.indicatorHeight,
             .size.width = width,
-            .size.height = _selectIndicatorHeight
+            .size.height = self.indicatorHeight
         };
     }
 }
@@ -301,6 +305,16 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
 - (void)setHorizontalMargin:(CGFloat)horizontalMargin {
     _horizontalMargin = horizontalMargin;
     _scrollView.contentInset = UIEdgeInsetsMake(0, horizontalMargin, 0, horizontalMargin);
+}
+
+- (void)setIndicatorHidden:(BOOL)indicatorHidden {
+    _indicatorHidden = indicatorHidden;
+    self.selectIndicatorView.hidden = indicatorHidden;
+}
+
+- (void)setIndicatorHeight:(CGFloat)indicatorHeight {
+    _indicatorHeight = indicatorHeight;
+    [self _updateSelectIndicatorLayout];
 }
 
 @end

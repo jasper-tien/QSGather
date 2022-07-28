@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, BBPgcTabSelectType) {
 @optional
 
 - (NSUInteger)defaultSelectIndexInPgcTabController:(BBPgcTabController *)tabController;
+- (BOOL)indicatorHiddenInPgcTabController:(BBPgcTabController *)tabController;
 
 // Variable height & width support
 
@@ -41,6 +42,7 @@ typedef NS_ENUM(NSInteger, BBPgcTabSelectType) {
 - (CGFloat)tabBarItemSpacingInPgcTabController:(BBPgcTabController *)tabController;
 - (CGFloat)indicatorHeightInPgcTabController:(BBPgcTabController *)tabController;
 - (UIEdgeInsets)tabBarViewInsetInPgcTabController:(BBPgcTabController *)tabController;
+- (UIEdgeInsets)tabBarViewContentInsetInPgcTabController:(BBPgcTabController *)tabController;
 
 // Switch customization
 
