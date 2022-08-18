@@ -59,6 +59,8 @@
 @interface BBPgcTabTestController ()<BBPgcTabControllerDataSource, BBPgcTabControllerDelegate>
 @property (nonatomic, strong) BBPgcTabController *tabController;
 @property (nonatomic, copy) NSArray<BBPgcTabModel *> *tabModels;
+@property (nonatomic, strong) dispatch_block_t actionBlock;
+@property (nonatomic, strong) void(^backBlock)(NSString *message, NSInteger code);
 @end
 
 @implementation BBPgcTabTestController
@@ -67,6 +69,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.actionBlock = ^{
+        NSLog(@"%@", self);
+    };
+    self.backBlock = ^(NSString *message, NSInteger code) {
+        NSLog(@"%@", self);
+    };
     NSArray<NSArray *> *bgColors = @[@[[UIColor purpleColor], @"紫色"],
                                           @[[UIColor orangeColor], @"橘色" ],
                                           @[[UIColor greenColor], @"绿色"],
@@ -87,7 +95,7 @@
     }
     self.tabModels = tabModels;
     
-    _tabController = [[BBPgcTabController alloc] initWithForceLoad:YES];
+    _tabController = [[BBPgcTabController alloc] initWithForceLoad:NO];
     _tabController.dataSource = self;
     _tabController.delegate = self;
     [self.view addSubview:_tabController.view];

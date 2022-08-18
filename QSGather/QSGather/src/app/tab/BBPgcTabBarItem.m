@@ -156,7 +156,6 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     _contentLabel.frame = self.bounds;
-    _contentLabel.attributedText = [self _getContentTitle];
 }
 
 #pragma mark - public
@@ -176,6 +175,7 @@
     } else {
         _subTitleAttriStr = nil;
     }
+    _contentLabel.attributedText = [self _getContentTitle];
     [self setNeedsLayout];
 }
 
@@ -183,6 +183,7 @@
     _hasWidth = NO;
     _titleElement.font = titleFont ?: [UIFont systemFontOfSize:13];
     _subTitleElement.font = subTitleFont ?: [UIFont systemFontOfSize:10];
+    _contentLabel.attributedText = [self _getContentTitle];
     [self setNeedsLayout];
 }
 
@@ -190,8 +191,10 @@
     if (isNight) {
         _titleElement.titleNightColor = titleColor;
     } else {
-        _titleElement.titleNightSelectColor = titleColor;
+        _titleElement.titleColor = titleColor;
     }
+    _contentLabel.attributedText = [self _getContentTitle];
+    [self setNeedsLayout];
 }
 
 - (void)configSubTitleColor:(UIColor *)subTitleColor isNight:(BOOL)isNight {
@@ -200,6 +203,8 @@
     } else {
         _subTitleElement.subTitleColor = subTitleColor;
     }
+    _contentLabel.attributedText = [self _getContentTitle];
+    [self setNeedsLayout];
 }
 
 - (void)configTitleHighlightColor:(UIColor *)titleColor isNight:(BOOL)isNight {
@@ -208,6 +213,8 @@
     } else {
         _titleElement.titleSelectColor = titleColor;
     }
+    _contentLabel.attributedText = [self _getContentTitle];
+    [self setNeedsLayout];
 }
 
 - (void)configSubTitleHighlightColor:(UIColor *)subTitleColor isNight:(BOOL)isNight {
@@ -216,6 +223,8 @@
     } else {
         _subTitleElement.subTitleSelectColor = subTitleColor;
     }
+    _contentLabel.attributedText = [self _getContentTitle];
+    [self setNeedsLayout];
 }
 
 #pragma mark - BBPgcTabBarItemProtocol

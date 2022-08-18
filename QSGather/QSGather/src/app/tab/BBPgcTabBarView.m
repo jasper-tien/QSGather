@@ -197,7 +197,6 @@ static CGFloat kPgcTabBarAnimatedDuration = 0.3;
             width = itemView.itemWidth;
         }
         itemView.frame = CGRectMake(itemPointX, 0, width, CGRectGetHeight(self.frame) - self.indicatorHeight);
-        [_scrollView addSubview:itemView];
         contentSizeWidth = itemPointX + width;
         itemPointX = itemPointX + width + _itemSpacing;
     }

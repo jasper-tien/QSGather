@@ -97,6 +97,10 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
     [self _updateStatus:PGCVCStatusViewDidDisappear controller:self.selectViewController animated:animated];
 }
 
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
+    return NO;
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
@@ -320,6 +324,7 @@ static CGFloat kPgcTabBarViewAreaHeightDefault = 44.f;
         self.loadedViewControllers[@(index).stringValue] = controller;
         controller.view.frame = CGRectMake(self.pageView.viewWidth * index, 0, self.pageView.viewWidth, self.pageView.viewHeight);
         controller.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self addChildViewController:controller];
         [self.pageView addSubview:controller.view];
     }
 }

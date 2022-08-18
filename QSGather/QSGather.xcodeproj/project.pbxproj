@@ -23,6 +23,8 @@
 		8E7008642890E671009AB81A /* BBPgcTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7008622890E671009AB81A /* BBPgcTabBarView.m */; };
 		8E70086E2890E79E009AB81A /* UIView+QSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70086D2890E79E009AB81A /* UIView+QSFrame.m */; };
 		8E70087228911A20009AB81A /* BBPgcTabTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70087128911A20009AB81A /* BBPgcTabTestController.m */; };
+		8E9CC27928A238EA00B645AA /* default_img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CC27828A238EA00B645AA /* default_img@3x.png */; };
+		8E9CC27B28A23F1200B645AA /* share_action_watchtogether@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		8E70086D2890E79E009AB81A /* UIView+QSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QSFrame.m"; sourceTree = "<group>"; };
 		8E70087028911A20009AB81A /* BBPgcTabTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabTestController.h; sourceTree = "<group>"; };
 		8E70087128911A20009AB81A /* BBPgcTabTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabTestController.m; sourceTree = "<group>"; };
+		8E9CC27828A238EA00B645AA /* default_img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_img@3x.png"; sourceTree = "<group>"; };
+		8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_action_watchtogether@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				8E1DBA5327328F3700ABBBF9 /* Assets.xcassets */,
 				8E1DBA5527328F3700ABBBF9 /* LaunchScreen.storyboard */,
 				8E1DBA5827328F3700ABBBF9 /* Info.plist */,
+				8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */,
+				8E9CC27828A238EA00B645AA /* default_img@3x.png */,
 				8E1DBA5927328F3700ABBBF9 /* main.m */,
 			);
 			path = QSGather;
@@ -337,6 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9CC27928A238EA00B645AA /* default_img@3x.png in Resources */,
+				8E9CC27B28A23F1200B645AA /* share_action_watchtogether@3x.png in Resources */,
 				8E1DBA5727328F3700ABBBF9 /* LaunchScreen.storyboard in Resources */,
 				8E1DBA5427328F3700ABBBF9 /* Assets.xcassets in Resources */,
 			);
