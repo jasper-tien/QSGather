@@ -7,6 +7,7 @@
 
 #import "QSHomeViewController.h"
 #import "BBPgcTabTestController.h"
+#import "QSClassifyController.h"
 
 @interface QSHomeViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -48,10 +49,15 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)jumpToClassifyController {
+    QSClassifyController *vc = [[QSClassifyController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,6 +85,11 @@
             [self jumpToTabTestController];
             break;
         }
+        case 2: {
+            [self jumpToClassifyController];
+            break;
+        }
+            
         default:
             break;
     }
