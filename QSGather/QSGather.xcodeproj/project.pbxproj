@@ -18,6 +18,17 @@
 		8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA812732915B00ABBBF9 /* QSTransition.m */; };
 		8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA842732928100ABBBF9 /* QSNavigationController.m */; };
 		8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */; };
+		8E7008602890E65D009AB81A /* BBPgcTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70085F2890E65D009AB81A /* BBPgcTabController.m */; };
+		8E7008632890E671009AB81A /* BBPgcTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7008612890E671009AB81A /* BBPgcTabBarItem.m */; };
+		8E7008642890E671009AB81A /* BBPgcTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7008622890E671009AB81A /* BBPgcTabBarView.m */; };
+		8E70086E2890E79E009AB81A /* UIView+QSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70086D2890E79E009AB81A /* UIView+QSFrame.m */; };
+		8E70087228911A20009AB81A /* BBPgcTabTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E70087128911A20009AB81A /* BBPgcTabTestController.m */; };
+		8E9CC27928A238EA00B645AA /* default_img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CC27828A238EA00B645AA /* default_img@3x.png */; };
+		8E9CC27B28A23F1200B645AA /* share_action_watchtogether@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */; };
+		8EAADE5E28BA16A000BD5874 /* QSClassifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE5D28BA16A000BD5874 /* QSClassifyController.m */; };
+		8EAADE6228BA1D5B00BD5874 /* QSTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE5F28BA1D5B00BD5874 /* QSTabController.swift */; };
+		8EAADE6328BA1D5B00BD5874 /* QSTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE6028BA1D5B00BD5874 /* QSTabBarItem.swift */; };
+		8EAADE6428BA1D5B00BD5874 /* QSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE6128BA1D5B00BD5874 /* QSTabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,25 @@
 		8E1DBA842732928100ABBBF9 /* QSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSNavigationController.m; sourceTree = "<group>"; };
 		8E1DBA88273296F600ABBBF9 /* QSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHomeViewController.h; sourceTree = "<group>"; };
 		8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHomeViewController.m; sourceTree = "<group>"; };
+		8E70085E2890E65D009AB81A /* BBPgcTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPgcTabController.h; sourceTree = "<group>"; };
+		8E70085F2890E65D009AB81A /* BBPgcTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabController.m; sourceTree = "<group>"; };
+		8E7008612890E671009AB81A /* BBPgcTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabBarItem.m; sourceTree = "<group>"; };
+		8E7008622890E671009AB81A /* BBPgcTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabBarView.m; sourceTree = "<group>"; };
+		8E7008652890E695009AB81A /* BBPgcTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarItem.h; sourceTree = "<group>"; };
+		8E7008662890E696009AB81A /* BBPgcTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarView.h; sourceTree = "<group>"; };
+		8E7008672890E696009AB81A /* BBPgcTabBarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabBarProtocol.h; sourceTree = "<group>"; };
+		8E70086C2890E79E009AB81A /* UIView+QSFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QSFrame.h"; sourceTree = "<group>"; };
+		8E70086D2890E79E009AB81A /* UIView+QSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QSFrame.m"; sourceTree = "<group>"; };
+		8E70087028911A20009AB81A /* BBPgcTabTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBPgcTabTestController.h; sourceTree = "<group>"; };
+		8E70087128911A20009AB81A /* BBPgcTabTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBPgcTabTestController.m; sourceTree = "<group>"; };
+		8E9CC27828A238EA00B645AA /* default_img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_img@3x.png"; sourceTree = "<group>"; };
+		8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_action_watchtogether@3x.png"; sourceTree = "<group>"; };
+		8EAADE5228BA159400BD5874 /* QSGather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QSGather-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EAADE5C28BA16A000BD5874 /* QSClassifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSClassifyController.h; sourceTree = "<group>"; };
+		8EAADE5D28BA16A000BD5874 /* QSClassifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSClassifyController.m; sourceTree = "<group>"; };
+		8EAADE5F28BA1D5B00BD5874 /* QSTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabController.swift; sourceTree = "<group>"; };
+		8EAADE6028BA1D5B00BD5874 /* QSTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabBarItem.swift; sourceTree = "<group>"; };
+		8EAADE6128BA1D5B00BD5874 /* QSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +142,8 @@
 				8E1DBA5327328F3700ABBBF9 /* Assets.xcassets */,
 				8E1DBA5527328F3700ABBBF9 /* LaunchScreen.storyboard */,
 				8E1DBA5827328F3700ABBBF9 /* Info.plist */,
+				8E9CC27A28A23F1200B645AA /* share_action_watchtogether@3x.png */,
+				8E9CC27828A238EA00B645AA /* default_img@3x.png */,
 				8E1DBA5927328F3700ABBBF9 /* main.m */,
 			);
 			path = QSGather;
@@ -150,8 +182,10 @@
 		8E1DBA7D27328F6F00ABBBF9 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				8EAADE5128BA157800BD5874 /* tabSwift */,
 				8E1DBA86273296D700ABBBF9 /* pages */,
 				8E1DBA7F2732914D00ABBBF9 /* navigation */,
+				8E70085D2890E63D009AB81A /* tab */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -159,6 +193,7 @@
 		8E1DBA7E27328F6F00ABBBF9 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				8E70086F2890E7D5009AB81A /* utils */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -177,6 +212,7 @@
 		8E1DBA86273296D700ABBBF9 /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				8EAADE5B28BA164400BD5874 /* classify */,
 				8E1DBA87273296E200ABBBF9 /* home */,
 			);
 			path = pages;
@@ -189,6 +225,51 @@
 				8E1DBA89273296F600ABBBF9 /* QSHomeViewController.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		8E70085D2890E63D009AB81A /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				8E7008672890E696009AB81A /* BBPgcTabBarProtocol.h */,
+				8E7008652890E695009AB81A /* BBPgcTabBarItem.h */,
+				8E7008612890E671009AB81A /* BBPgcTabBarItem.m */,
+				8E7008662890E696009AB81A /* BBPgcTabBarView.h */,
+				8E7008622890E671009AB81A /* BBPgcTabBarView.m */,
+				8E70085E2890E65D009AB81A /* BBPgcTabController.h */,
+				8E70085F2890E65D009AB81A /* BBPgcTabController.m */,
+				8E70087028911A20009AB81A /* BBPgcTabTestController.h */,
+				8E70087128911A20009AB81A /* BBPgcTabTestController.m */,
+			);
+			path = tab;
+			sourceTree = "<group>";
+		};
+		8E70086F2890E7D5009AB81A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E70086C2890E79E009AB81A /* UIView+QSFrame.h */,
+				8E70086D2890E79E009AB81A /* UIView+QSFrame.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		8EAADE5128BA157800BD5874 /* tabSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8EAADE5228BA159400BD5874 /* QSGather-Bridging-Header.h */,
+				8EAADE6028BA1D5B00BD5874 /* QSTabBarItem.swift */,
+				8EAADE6128BA1D5B00BD5874 /* QSTabBarView.swift */,
+				8EAADE5F28BA1D5B00BD5874 /* QSTabController.swift */,
+			);
+			path = tabSwift;
+			sourceTree = "<group>";
+		};
+		8EAADE5B28BA164400BD5874 /* classify */ = {
+			isa = PBXGroup;
+			children = (
+				8EAADE5C28BA16A000BD5874 /* QSClassifyController.h */,
+				8EAADE5D28BA16A000BD5874 /* QSClassifyController.m */,
+			);
+			path = classify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +339,7 @@
 				TargetAttributes = {
 					8E1DBA4327328F3500ABBBF9 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1320;
 					};
 					8E1DBA5E27328F3700ABBBF9 = {
 						CreatedOnToolsVersion = 13.0;
@@ -294,6 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9CC27928A238EA00B645AA /* default_img@3x.png in Resources */,
+				8E9CC27B28A23F1200B645AA /* share_action_watchtogether@3x.png in Resources */,
 				8E1DBA5727328F3700ABBBF9 /* LaunchScreen.storyboard in Resources */,
 				8E1DBA5427328F3700ABBBF9 /* Assets.xcassets in Resources */,
 			);
@@ -323,7 +407,16 @@
 				8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */,
 				8E1DBA5A27328F3700ABBBF9 /* main.m in Sources */,
 				8E1DBA852732928100ABBBF9 /* QSNavigationController.m in Sources */,
+				8EAADE5E28BA16A000BD5874 /* QSClassifyController.m in Sources */,
+				8E7008602890E65D009AB81A /* BBPgcTabController.m in Sources */,
+				8E70086E2890E79E009AB81A /* UIView+QSFrame.m in Sources */,
 				8E1DBA8A273296F600ABBBF9 /* QSHomeViewController.m in Sources */,
+				8EAADE6228BA1D5B00BD5874 /* QSTabController.swift in Sources */,
+				8EAADE6428BA1D5B00BD5874 /* QSTabBarView.swift in Sources */,
+				8E7008632890E671009AB81A /* BBPgcTabBarItem.m in Sources */,
+				8E70087228911A20009AB81A /* BBPgcTabTestController.m in Sources */,
+				8EAADE6328BA1D5B00BD5874 /* QSTabBarItem.swift in Sources */,
+				8E7008642890E671009AB81A /* BBPgcTabBarView.m in Sources */,
 				8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */,
 				8E1DBA822732915B00ABBBF9 /* QSTransition.m in Sources */,
 			);
@@ -490,8 +583,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QSGather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,6 +601,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.QSGather.QSGather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QSGather/src/app/tabSwift/QSGather-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -515,8 +613,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QSGather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -531,6 +631,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.QSGather.QSGather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QSGather/src/app/tabSwift/QSGather-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -538,6 +640,7 @@
 		8E1DBA7727328F3700ABBBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -560,6 +663,7 @@
 		8E1DBA7827328F3700ABBBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -582,6 +686,7 @@
 		8E1DBA7A27328F3700ABBBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -602,6 +707,7 @@
 		8E1DBA7B27328F3700ABBBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
