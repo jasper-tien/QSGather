@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:QSGather/QSGather.xcodeproj">
+      location = "group:QSGather.xcodeproj">
    </FileRef>
 </Workspace>
