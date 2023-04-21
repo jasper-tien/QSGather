@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05581CB0F7DB2CD347F446E3 /* Pods_QSGatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E8DF47E5ABCC42AC75D970 /* Pods_QSGatherTests.framework */; };
+		77DEFA1E66B186CB6342B374 /* Pods_QSGather_QSGatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7470B0B87F86D1DA3FA1A8 /* Pods_QSGather_QSGatherUITests.framework */; };
 		8E1DBA4927328F3500ABBBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA4827328F3500ABBBF9 /* AppDelegate.m */; };
 		8E1DBA4C27328F3500ABBBF9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DBA4B27328F3500ABBBF9 /* SceneDelegate.m */; };
 		8E1DBA5427328F3700ABBBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DBA5327328F3700ABBBF9 /* Assets.xcassets */; };
@@ -29,6 +31,7 @@
 		8EAADE6228BA1D5B00BD5874 /* QSTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE5F28BA1D5B00BD5874 /* QSTabController.swift */; };
 		8EAADE6328BA1D5B00BD5874 /* QSTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE6028BA1D5B00BD5874 /* QSTabBarItem.swift */; };
 		8EAADE6428BA1D5B00BD5874 /* QSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAADE6128BA1D5B00BD5874 /* QSTabBarView.swift */; };
+		A800B67B2244ED4BAABABF23 /* Pods_QSGather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CE0A9DEC65D780778ABEB4 /* Pods_QSGather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1165AA712810169D1ED00BAC /* Pods-QSGather-QSGatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGather-QSGatherUITests.debug.xcconfig"; path = "Target Support Files/Pods-QSGather-QSGatherUITests/Pods-QSGather-QSGatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		172B77752CDB00A40B7BBBC3 /* Pods-QSGatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGatherTests.release.xcconfig"; path = "Target Support Files/Pods-QSGatherTests/Pods-QSGatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		26968289FCE3CC792459CBB1 /* Pods-QSGatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGatherTests.debug.xcconfig"; path = "Target Support Files/Pods-QSGatherTests/Pods-QSGatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E8DF47E5ABCC42AC75D970 /* Pods_QSGatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSGatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783B4F121B30FC011946E41F /* Pods-QSGather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGather.release.xcconfig"; path = "Target Support Files/Pods-QSGather/Pods-QSGather.release.xcconfig"; sourceTree = "<group>"; };
 		8E1DBA4427328F3500ABBBF9 /* QSGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1DBA4727328F3500ABBBF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E1DBA4827328F3500ABBBF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 		8EAADE5F28BA1D5B00BD5874 /* QSTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabController.swift; sourceTree = "<group>"; };
 		8EAADE6028BA1D5B00BD5874 /* QSTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabBarItem.swift; sourceTree = "<group>"; };
 		8EAADE6128BA1D5B00BD5874 /* QSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabBarView.swift; sourceTree = "<group>"; };
+		95CE0A9DEC65D780778ABEB4 /* Pods_QSGather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSGather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA01ABFCA1268E758D39C298 /* Pods-QSGather-QSGatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGather-QSGatherUITests.release.xcconfig"; path = "Target Support Files/Pods-QSGather-QSGatherUITests/Pods-QSGather-QSGatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE7470B0B87F86D1DA3FA1A8 /* Pods_QSGather_QSGatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSGather_QSGatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC041E1CB595533F57E2B35 /* Pods-QSGather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSGather.debug.xcconfig"; path = "Target Support Files/Pods-QSGather/Pods-QSGather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A800B67B2244ED4BAABABF23 /* Pods_QSGather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05581CB0F7DB2CD347F446E3 /* Pods_QSGatherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +123,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77DEFA1E66B186CB6342B374 /* Pods_QSGather_QSGatherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07DF5303904011A817E55E5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95CE0A9DEC65D780778ABEB4 /* Pods_QSGather.framework */,
+				CE7470B0B87F86D1DA3FA1A8 /* Pods_QSGather_QSGatherUITests.framework */,
+				37E8DF47E5ABCC42AC75D970 /* Pods_QSGatherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50102C1D46C7B481FC064FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEC041E1CB595533F57E2B35 /* Pods-QSGather.debug.xcconfig */,
+				783B4F121B30FC011946E41F /* Pods-QSGather.release.xcconfig */,
+				1165AA712810169D1ED00BAC /* Pods-QSGather-QSGatherUITests.debug.xcconfig */,
+				CA01ABFCA1268E758D39C298 /* Pods-QSGather-QSGatherUITests.release.xcconfig */,
+				26968289FCE3CC792459CBB1 /* Pods-QSGatherTests.debug.xcconfig */,
+				172B77752CDB00A40B7BBBC3 /* Pods-QSGatherTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E1DBA3B27328F3500ABBBF9 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +160,8 @@
 				8E1DBA6227328F3700ABBBF9 /* QSGatherTests */,
 				8E1DBA6C27328F3700ABBBF9 /* QSGatherUITests */,
 				8E1DBA4527328F3500ABBBF9 /* Products */,
+				50102C1D46C7B481FC064FAE /* Pods */,
+				07DF5303904011A817E55E5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DBA7327328F3700ABBBF9 /* Build configuration list for PBXNativeTarget "QSGather" */;
 			buildPhases = (
+				2D1013DD884DB671DA34A384 /* [CP] Check Pods Manifest.lock */,
 				8E1DBA4027328F3500ABBBF9 /* Sources */,
 				8E1DBA4127328F3500ABBBF9 /* Frameworks */,
 				8E1DBA4227328F3500ABBBF9 /* Resources */,
+				A51F9919570A291284575BA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DBA7627328F3700ABBBF9 /* Build configuration list for PBXNativeTarget "QSGatherTests" */;
 			buildPhases = (
+				D3F85B629101CC187A4FBAB8 /* [CP] Check Pods Manifest.lock */,
 				8E1DBA5B27328F3700ABBBF9 /* Sources */,
 				8E1DBA5C27328F3700ABBBF9 /* Frameworks */,
 				8E1DBA5D27328F3700ABBBF9 /* Resources */,
@@ -314,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DBA7927328F3700ABBBF9 /* Build configuration list for PBXNativeTarget "QSGatherUITests" */;
 			buildPhases = (
+				93D1799F025A4A80F2009713 /* [CP] Check Pods Manifest.lock */,
 				8E1DBA6527328F3700ABBBF9 /* Sources */,
 				8E1DBA6627328F3700ABBBF9 /* Frameworks */,
 				8E1DBA6727328F3700ABBBF9 /* Resources */,
+				1AC8BB5F37F846D4D8E293D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +443,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AC8BB5F37F846D4D8E293D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QSGather-QSGatherUITests/Pods-QSGather-QSGatherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QSGather-QSGatherUITests/Pods-QSGather-QSGatherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QSGather-QSGatherUITests/Pods-QSGather-QSGatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D1013DD884DB671DA34A384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QSGather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D1799F025A4A80F2009713 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QSGather-QSGatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A51F9919570A291284575BA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QSGather/Pods-QSGather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QSGather/Pods-QSGather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QSGather/Pods-QSGather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F85B629101CC187A4FBAB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QSGatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E1DBA4027328F3500ABBBF9 /* Sources */ = {
@@ -580,6 +728,7 @@
 		};
 		8E1DBA7427328F3700ABBBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC041E1CB595533F57E2B35 /* Pods-QSGather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,6 +742,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,6 +760,7 @@
 		};
 		8E1DBA7527328F3700ABBBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783B4F121B30FC011946E41F /* Pods-QSGather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -623,6 +774,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,6 +791,7 @@
 		};
 		8E1DBA7727328F3700ABBBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26968289FCE3CC792459CBB1 /* Pods-QSGatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,6 +815,7 @@
 		};
 		8E1DBA7827328F3700ABBBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172B77752CDB00A40B7BBBC3 /* Pods-QSGatherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +839,7 @@
 		};
 		8E1DBA7A27328F3700ABBBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1165AA712810169D1ED00BAC /* Pods-QSGather-QSGatherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -706,6 +861,7 @@
 		};
 		8E1DBA7B27328F3700ABBBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA01ABFCA1268E758D39C298 /* Pods-QSGather-QSGatherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,9 @@
+Pods/
+
+xcuserdata
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+Gemfile.lock
+
+.DS_Store
