@@ -14,23 +14,33 @@ PODS:
   - AFNetworking/Serialization (3.0.0)
   - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
+  - GCDMulticastDelegate (1.0.1)
+  - QSKLine (0.1.2):
+    - GCDMulticastDelegate
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
 
 DEPENDENCIES:
   - AFNetworking (= 3.0.0)
+  - QSKLine (= 0.1.2)
   - SDWebImage
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GCDMulticastDelegate
+  https://github.com/jasper-tien/Specs.git:
+    - QSKLine
   trunk:
     - AFNetworking
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: aec2990e1d8a720d5c5849cc62b568758e2a52a3
+  GCDMulticastDelegate: 333ae7b9e95538726d66cf9fe2e46a2f06037843
+  QSKLine: 46e9f666464f992d11568ad8c1cddace9f2f486d
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
 
-PODFILE CHECKSUM: 01e23abebeccafbfef5795ca180ede3e8f843c6e
+PODFILE CHECKSUM: 4f099df0ab93dcf8daddac02056b78953ff0048f
 
 COCOAPODS: 1.11.3
