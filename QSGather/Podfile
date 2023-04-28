@@ -15,6 +15,7 @@ target 'QSGather' do
   
   # custom pods
   pod 'QSKLine', '0.1.2'
+  pod 'QSTabContainer'
 
   target 'QSGatherTests' do
     inherit! :search_paths

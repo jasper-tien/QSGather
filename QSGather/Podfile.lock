@@ -17,6 +17,9 @@ PODS:
   - GCDMulticastDelegate (1.0.1)
   - QSKLine (0.1.2):
     - GCDMulticastDelegate
+  - QSTabContainer (0.0.2):
+    - QSUIUtils (= 0.0.1)
+  - QSUIUtils (0.0.1)
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
@@ -24,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 3.0.0)
   - QSKLine (= 0.1.2)
+  - QSTabContainer
   - SDWebImage
 
 SPEC REPOS:
@@ -31,6 +35,8 @@ SPEC REPOS:
     - GCDMulticastDelegate
   https://github.com/jasper-tien/Specs.git:
     - QSKLine
+    - QSTabContainer
+    - QSUIUtils
   trunk:
     - AFNetworking
     - SDWebImage
@@ -39,8 +45,10 @@ SPEC CHECKSUMS:
   AFNetworking: aec2990e1d8a720d5c5849cc62b568758e2a52a3
   GCDMulticastDelegate: 333ae7b9e95538726d66cf9fe2e46a2f06037843
   QSKLine: 46e9f666464f992d11568ad8c1cddace9f2f486d
+  QSTabContainer: de34d1c9414466744b9b488658d21f92c95aa1d7
+  QSUIUtils: e91ba9f221c69181c4b653b3ac0907224d41c367
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
 
-PODFILE CHECKSUM: 4f099df0ab93dcf8daddac02056b78953ff0048f
+PODFILE CHECKSUM: 1ca6ebedb74dab39131e254638284ea2148b7b2a
 
 COCOAPODS: 1.11.3
