@@ -117,4 +117,5 @@
 //@objc optional func indicatorHeight(in tabController: QSTabController) -> CGFloat
 //@objc optional func tabBarViewInset(in tabController: QSTabController) -> UIEdgeInsets
 //@objc optional func tabBarViewContentInset(in tabController: QSTabController) -> UIEdgeInsets
+
 @end
